@@ -49,9 +49,9 @@ export default function City() {
       document.body.id = "sunny";
     } else if (contains(conditionText, ["snow", "ice", "sleet", "freezing"])) {
       document.body.id = "snow";
+      setColor(true);
     } else {
       document.body.id = "rain";
-      setColor(true);
     }
   }
   function contains(target: string, pattern: string[]): boolean {
