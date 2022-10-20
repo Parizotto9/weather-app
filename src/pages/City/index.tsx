@@ -33,7 +33,7 @@ export default function City() {
     // console.log(allWithClass);
     axios
       .get(
-        `http://api.weatherapi.com/v1/forecast.json?key=985174c0cb244495a59223819221810&q=${place}`
+        `https://api.weatherapi.com/v1/forecast.json?key=985174c0cb244495a59223819221810&q=${place}`
       )
       .then((res) => {
         let newWeather = res.data.current;
